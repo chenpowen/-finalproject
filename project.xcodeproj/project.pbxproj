@@ -14,6 +14,10 @@
 		4C72975D1E154CFC00244845 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C72975B1E154CFC00244845 /* LaunchScreen.storyboard */; };
 		4C7297681E154CFC00244845 /* projectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7297671E154CFC00244845 /* projectTests.swift */; };
 		4C7297731E154CFC00244845 /* projectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7297721E154CFC00244845 /* projectUITests.swift */; };
+		4C7297811E1550DF00244845 /* MusicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7297801E1550DF00244845 /* MusicTableViewController.swift */; };
+		4C7297851E15513200244845 /* AddMusicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7297841E15513200244845 /* AddMusicTableViewController.swift */; };
+		4C7297871E155C9D00244845 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7297861E155C9D00244845 /* TableViewCell.swift */; };
+		4EC1280F1E1FC50B00DBEAC1 /* SongDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC1280E1E1FC50B00DBEAC1 /* SongDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		4C72976E1E154CFC00244845 /* projectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = projectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C7297721E154CFC00244845 /* projectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectUITests.swift; sourceTree = "<group>"; };
 		4C7297741E154CFC00244845 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C7297801E1550DF00244845 /* MusicTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicTableViewController.swift; sourceTree = "<group>"; };
+		4C7297841E15513200244845 /* AddMusicTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMusicTableViewController.swift; sourceTree = "<group>"; };
+		4C7297861E155C9D00244845 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		4EC1280E1E1FC50B00DBEAC1 /* SongDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +105,13 @@
 		4C7297511E154CFC00244845 /* project */ = {
 			isa = PBXGroup;
 			children = (
+				4EC1280E1E1FC50B00DBEAC1 /* SongDetailViewController.swift */,
 				4C7297521E154CFC00244845 /* AppDelegate.swift */,
 				4C7297541E154CFC00244845 /* ViewController.swift */,
 				4C7297561E154CFC00244845 /* Main.storyboard */,
+				4C7297861E155C9D00244845 /* TableViewCell.swift */,
+				4C7297801E1550DF00244845 /* MusicTableViewController.swift */,
+				4C7297841E15513200244845 /* AddMusicTableViewController.swift */,
 				4C7297591E154CFC00244845 /* Assets.xcassets */,
 				4C72975B1E154CFC00244845 /* LaunchScreen.storyboard */,
 				4C72975E1E154CFC00244845 /* Info.plist */,
@@ -193,7 +205,7 @@
 				TargetAttributes = {
 					4C72974E1E154CFC00244845 = {
 						CreatedOnToolsVersion = 8.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					4C7297621E154CFC00244845 = {
 						CreatedOnToolsVersion = 8.1;
@@ -259,8 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EC1280F1E1FC50B00DBEAC1 /* SongDetailViewController.swift in Sources */,
+				4C7297871E155C9D00244845 /* TableViewCell.swift in Sources */,
 				4C7297551E154CFC00244845 /* ViewController.swift in Sources */,
 				4C7297531E154CFC00244845 /* AppDelegate.swift in Sources */,
+				4C7297811E1550DF00244845 /* MusicTableViewController.swift in Sources */,
+				4C7297851E15513200244845 /* AddMusicTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +428,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = project/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-0368044.project";
@@ -424,6 +441,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = project/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-0368044.project";
@@ -496,7 +514,7 @@
 				4C7297761E154CFC00244845 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		4C7297771E154CFC00244845 /* Build configuration list for PBXNativeTarget "project" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +523,7 @@
 				4C7297791E154CFC00244845 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 		4C72977A1E154CFC00244845 /* Build configuration list for PBXNativeTarget "projectTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +532,7 @@
 				4C72977C1E154CFC00244845 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 		4C72977D1E154CFC00244845 /* Build configuration list for PBXNativeTarget "projectUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +541,7 @@
 				4C72977F1E154CFC00244845 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
